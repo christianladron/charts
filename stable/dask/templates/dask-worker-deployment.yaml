@@ -2,6 +2,7 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: {{ template "dask.fullname" . }}-worker
+  namespace: {{ .Values.namespace }}
   labels:
     app: {{ template "dask.name" . }}
     heritage: {{ .Release.Service | quote }}

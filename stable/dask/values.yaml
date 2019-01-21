@@ -1,6 +1,6 @@
 # nameOverride: dask
 # fullnameOverride: dask
-
+namespace: default
 scheduler:
   name: scheduler
   image:

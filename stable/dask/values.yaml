@@ -1,6 +1,7 @@
 # nameOverride: dask
 # fullnameOverride: dask
 namespace: default
+nodeSelector: null
 scheduler:
   name: scheduler
   image:

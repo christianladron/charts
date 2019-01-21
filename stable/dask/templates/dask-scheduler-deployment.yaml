@@ -27,6 +27,7 @@ spec:
     spec:
       containers:
         - name: {{ template "dask.fullname" . }}-scheduler
+          nodeSelector: {{ .Values.nodeSelector }}
           image: "{{ .Values.scheduler.image.repository }}:{{ .Values.scheduler.image.tag }}"
           imagePullPolicy: {{ .Values.scheduler.image.pullPolicy }}
           args:
